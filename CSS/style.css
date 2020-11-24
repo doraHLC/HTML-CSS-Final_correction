@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+*/*{
+    outline: 1px solid #000000;
+}*/
+
+.body{
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nav{
+    background: #f6f6f6;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul li + li{
+    border-left: 2px solid #cccccc;
+}
+
+.nav ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    font-weight: bold;
+}
+
+.nav ul li img{
+    vertical-align: middle;
+}
+
+.nav .Facebook{
+    color: #4460a0;
+    vertical-align: middle;
+}
+
+.nav .twitter{
+    color: #00aaec;
+    vertical-align: middle;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.header h1 a{
+    display: block;
+    background-image: url(../img/logo.png);
+    width: 170px;
+    height: 36px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header .menu{
+    display: flex;
+    
+}
+
+.header .menu li{
+    margin-left: 20px;
+}
+
+.header .menu li a{
+    text-decoration: none;
+	color: #26d0a1;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.header .menu li a:hover{
+    border-bottom: 3px solid #00cc99;
+}
+
+
+
+.banner{
+    background-image: url(../img/banner.png);
+    height: 346px;
+    display: flex;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 36px;
+    color: #fff;
+    padding: 10px 25px;
+    line-height: 1.5;
+    width: 1000px;
+    background: rgba(0,0,0,0.2);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+}
+
+
+.content .course{
+    width: 300px;
+    padding: 0 20px 15px;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.2);
+}
+
+.content .course-img{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .course h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.content .course p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content .course ul{
+    font-size: 14px;
+    list-style: disc;
+    margin: 5px 0 0 20px;
+    line-height : 1.5;
+}
+
+.comparative{
+    margin: 30px auto 60px;
+}
+
+.comparative h2{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form{
+    margin: 20px auto 10px;
+}
+
+.form th,.form td{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1.5px solid rgba(0,0,0,0.2);
+    padding: 10px 100px 10px 20px;
+    font-size: 14px;
+}
+
+.form th{
+    background: #f7f7f7;
+    text-align: left;
+}
+
+.form .tag{
+    color: #42b392;
+    font-weight: bold;
+}
+
+.information{
+    background: linear-gradient(to bottom,rgba(0,100,75,1),rgba(0,100,75,0.5));
+    padding: 40px 20px 30px;
+    margin-bottom: 20px;
+}
+
+.information h2{
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.information form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.information .detail label{
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.information .detail input{
+    width: 460px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.information .detail .submitbtn{
+    text-align: right;
+}
+
+.information .detail .submitbtn input{
+    width: 90px;
+    padding: 8px;
+    background: #00cc99;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.information .detail .submitbtn input:hover{
+    background: #DCB879;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.footer ul li{
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #e12d80;
+}
+
+.footer ul li a:hover{
+    color: #1E88A8;
+}
